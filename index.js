@@ -5,7 +5,8 @@ import {
   Text,
   Animated,
   Easing,
-  Dimensions
+  Dimensions,
+  ViewPropTypes
 } from 'react-native';
 
 import styles from './styles'
@@ -16,7 +17,7 @@ const deviceHeight = Dimensions.get('window').height;
 export default class Message extends Component {
 
   static propTypes = {
-      messageStyle: View.propTypes.style,
+      messageStyle: ViewPropTypes.style,
       textStyle: Text.propTypes.style,
       position: PropTypes.oneOf([
           'top',
